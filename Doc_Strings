@@ -1,0 +1,31 @@
+🍑 String Methods 
+○ string_name.string_method(arguments)
+
+📝 Formatting Methods
+○ .lower()
+○ .upper()
+○ .title()
+✎ Use case: Music Platform > Digitizing albums  > changing the album titles from lowercase to UPPERCASE or Title 
+
+💎 Splitting Strings I
+○ .split()
+✎ Use case: YouTube Comments > What is the most used word in 2024? > "This video is weird" > "This", "video", "is", "weird"
+
+💎 Splitting Strings II
+○ .split('')
+✎ Use case: Music Platform > Make a list of all the last names of artists > "Dua Lipa, Tauren Wells, Chris Tomlin" > "Lipa", "Wells", "Tomlin"
+
+artists = "Dua Lipa, Tauren Wells, Chris Tomlin"
+
+#𝘴𝘱𝘭𝘪𝘵 𝘪𝘯𝘵𝘰 𝘢 2𝘋 𝘭𝘪𝘴𝘵
+artist_names = artist.split(',')
+print(artist_names) >> "Dua Lipa", "Tauren Wells", "Chris Tomlin"
+
+#𝘮𝘢𝘬𝘦 𝘢 𝘭𝘪𝘴𝘵 𝘰𝘧 𝘫𝘶𝘴𝘵 𝘭𝘢𝘴𝘵 𝘯𝘢𝘮𝘦𝘴
+#𝘦𝘮𝘱𝘵𝘺 𝘭𝘪𝘴𝘵
+artist_last_names = [] 
+#𝘭𝘰𝘰𝘱 𝘧𝘰𝘳 𝘢𝘳𝘵𝘪𝘴𝘵_𝘯𝘢𝘮𝘦𝘴
+for name in artist_names:
+  #𝘶𝘴𝘦 𝘢𝘱𝘱𝘦𝘯𝘥 + 𝘴𝘱𝘭𝘪𝘵 𝘵𝘰 𝘮𝘢𝘬𝘦 𝘢 𝘯𝘦𝘸 𝘭𝘪𝘴𝘵
+  artist_last_names.append(name.split()[-1])
+print(artist_last_names) >> "Lipa", "Wells", "Tomlin" 
